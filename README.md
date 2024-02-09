@@ -1,16 +1,6 @@
 # WarlordsReduxCore
 Warlords Redux Framework designed for beginner scripters and mission makers 
 
-![This is an image](https://github.com/korbelz/WarlordsReduxMe.altis/blob/main/Redux_ME_thumbnail.png)
-
-![This is an image](https://img.shields.io/github/issues/korbelz/WarlordsReduxMe.altis)  ![This is an image](https://img.shields.io/github/forks/korbelz/WarlordsReduxMe.altis)  ![This is an image](https://img.shields.io/github/stars/korbelz/WarlordsReduxMe.altis) 	![This is an image](https://img.shields.io/twitter/url?url=https%3A%2F%2Fgithub.com%2Fkorbelz%2FWarlordsReduxMe.altis)
-
-
-# WarlordsReduxMe.altis
- Bare metal Warlords Redux. Core gameplay features extended with added customization. 100% vanilla, no extra scripts, add-ons or mods needed. 
-
- # Warlords Redux Miller Edition(ME) 
-Bare metal Warlords Redux. Core gameplay features extended with added customization. 100% vanilla, no extra scripts, add-ons or mods needed. 
 
 Original Warlords Redux by Bohemia Interactive and Jezuro can be found here:
 https://steamcommunity.com/sharedfiles/filedetails/?id=1834482266&searchtext=Warlords+redux
@@ -18,8 +8,6 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=1834482266&searchtext=War
 Offical Arma 3 Website: https://arma3.com/
 
 Offical Arma 3 discord:  https://discord.gg/arma
-
-Feature List: https://github.com/korbelz/WarlordsReduxMe.altis/wiki/Feature-List
 
 Link to Warlords Maverick
 https://github.com/korbelz/WarlordsReduxMav.altis
