@@ -1,7 +1,6 @@
 # WarlordsReduxCore
 Warlords Redux Framework designed for beginner scripters and mission makers 
 
-
 Original Warlords Redux by Bohemia Interactive and Jezuro can be found here:
 https://steamcommunity.com/sharedfiles/filedetails/?id=1834482266&searchtext=Warlords+redux
 
@@ -9,7 +8,22 @@ Offical Arma 3 Website: https://arma3.com/
 
 Offical Arma 3 discord:  https://discord.gg/arma
 
-Link to Warlords Maverick
+This project started off as a bug fix branch of the Warsim vets community Warlords Redux, then expanded to include cross map and mod compatibilty. 
+Warsim vets Warlords Redux can be found here:
+https://github.com/Gamer-Dad/warlordsredux.altis
+
+Includes contributions and tech from the following projects as well.
+
+Open Warlords
+https://github.com/aaannnndd/OWL
+
+Open Warlords Redux'd
+https://github.com/korbelz/OWLKorb
+
+Warlords Redux: Miller edition
+https://github.com/korbelz/WarlordsReduxMe.altis
+
+Warlords Maverick
 https://github.com/korbelz/WarlordsReduxMav.altis
 
 
