@@ -18,8 +18,5 @@ Thank you for your interest in contributing to our project! We welcome contribut
 
 8. Merge and Acknowledgment: Once your contribution has been reviewed and approved, one of our project maintainers will merge your changes into the main repository. You will be duly acknowledged for your valuable contribution.
 
-Please note that while we strive to review contributions promptly, it may take some time depending on the volume of submissions. We appreciate your patience and understanding throughout the process.
-
-Thank you for your dedication and support in improving our project. We look forward to your valuable contributions!
 
 Guidelines originally written by MrThomasM from the Warlords 2(Redux) project.  
