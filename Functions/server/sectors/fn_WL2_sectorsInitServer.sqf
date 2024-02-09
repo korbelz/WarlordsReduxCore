@@ -1,4 +1,5 @@
-private _potBases = BIS_WL_allSectors select {(if !(["(EU) #11", serverName] call BIS_fnc_inString) then {"A" in (_x getVariable ["BIS_WL_services", []])} else {(_x getVariable ["BIS_WL_canBeBase", true])}) && {!(_x in (profileNamespace getVariable ["BIS_WL_lastBases", []]))}};
+//_potBase needs to be refactored into a switch case to allow easier selection. Use warlords_constants to set the variable and include it here.
+private _potBases = BIS_WL_allSectors select {(if !(["(EU) #11", serverName] call BIS_fnc_inString) then {"H" in (_x getVariable ["BIS_WL_services", []]) && !("A" in (_x getVariable ["BIS_WL_services", []]))} else {(_x getVariable ["BIS_WL_canBeBase", true])}) && {!(_x in (profileNamespace getVariable ["BIS_WL_lastBases", []]))}};
 private _firstBase = selectRandom _potBases;
 //private _baseDistanceMin = 64000000;
 private _baseDistanceMin = (worldSize * 2083); //this equals 63,900,000 for atlis size map and 17,000,000 on a stratis sized map 
