@@ -394,7 +394,7 @@ if (_displayClass == "OSD") then {
 					case "RespawnVicFT": {0 spawn BIS_fnc_WL2_orderFTVehicleFT};
 					case "RespawnPod" : {"RequestMenu_close" call BIS_fnc_WL2_setupUI; [player, "orderFTPod"] remoteExec ["BIS_fnc_WL2_handleClientRequest", 2]};
 					case "RespawnPodFT" : {0 spawn BIS_fnc_WL2_orderFTPodFT};
-					case "welcomeScreen": {0 spawn BIS_fnc_WL2_welcome};
+					//case "welcomeScreen": {0 spawn BIS_fnc_WL2_welcome};
 					default {[_className, _cost, _category, _requirements, _offset] call BIS_fnc_WL2_requestPurchase};
 				};
 			} else {

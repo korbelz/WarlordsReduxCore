@@ -246,7 +246,7 @@ private _fncEarPlugs = compile preprocessFileLineNumbers "scripts\GF_Earplugs\GF
 ["client_init"] call BIS_fnc_endLoadingScreen;
 "Initialized" call BIS_fnc_WL2_announcer;
 [toUpper localize "STR_A3_WL_popup_init"] spawn BIS_fnc_WL2_smoothText;
-0 spawn BIS_fnc_WL2_welcome;
+//0 spawn BIS_fnc_WL2_welcome;
 
 0 spawn {
 	_markers = BIS_WL_playerSide call BIS_fnc_WL2_getRespawnMarkers;
