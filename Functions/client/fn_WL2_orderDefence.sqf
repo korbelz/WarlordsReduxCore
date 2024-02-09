@@ -2,7 +2,7 @@
 
 params ["_class", "_cost", "_offset"];
 
-player setVariable ["BIS_WL_isOrdering", true, [2, clientOwner]];
+
 if (count _offset != 3) then {
 	_offset = [0, 1.5, 0];
 };
@@ -79,7 +79,7 @@ if (BIS_WL_spacePressed) then {
 } else {
 	"Canceled" call BIS_fnc_WL2_announcer;
 	[toUpper localize "STR_A3_WL_deploy_canceled"] spawn BIS_fnc_WL2_smoothText;
-	player setVariable ["BIS_WL_isOrdering", false, [2, clientOwner]];
+	
 };
 
 if (BIS_WL_currentSelection == WL_ID_SELECTION_DEPLOYING_DEFENCE) then {
