@@ -1,5 +1,8 @@
 // MP Security
 /*
+This script was designed by MrThomasM for EU#11 server.
+It is left for reference only and should not be enabled.
+
 class CfgRemoteExec {
 	class Functions {
 		mode = 1;
