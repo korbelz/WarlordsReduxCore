@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={27962,128.66869,23474.105};
-		dir[]={-0.24651372,-0.63479543,0.73230171};
-		up[]={-0.20252335,0.77268028,0.60162246};
-		aside[]={0.94774234,1.4901161e-008,0.3190372};
+		pos[]={27982.203,359.97736,23782.135};
+		dir[]={-0.0018700324,-0.67992085,-0.73328942};
+		up[]={-0.0017334532,0.73328215,-0.67992222};
+		aside[]={-1.0000027,1.6123522e-008,0.002549995};
 	};
 };
 binarizationWanted=0;
@@ -39,13 +39,18 @@ addons[]=
 	"A3_Armor_F_Tank_LT_01",
 	"A3_Armor_F_Gamma_APC_Wheeled_03",
 	"A3_Armor_F_EPB_APC_Tracked_03",
-	"A3_Soft_F_Beta_MRAP_03"
+	"A3_Soft_F_Beta_MRAP_03",
+	"A3_Weapons_F_Rifles_MX",
+	"A3_Weapons_F_Acc",
+	"A3_Weapons_F",
+	"A3_Weapons_F_Items",
+	"A3_Characters_F_Mark"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=8;
+		items=10;
 		class Item0
 		{
 			className="A3_Modules_F";
@@ -102,12 +107,30 @@ class AddonsMetaData
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
+		class Item8
+		{
+			className="A3_Weapons_F";
+			name="Arma 3 Alpha - Weapons and Accessories";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item9
+		{
+			className="A3_Characters_F_Mark";
+			name="Arma 3 Marksmen - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
 	};
 };
 class DynamicSimulation
 {
 	enable=0;
 	saturateByObjectDistance=0;
+};
+dlcs[]=
+{
+	"Mark"
 };
 randomSeed=3694325;
 class ScenarioData
@@ -960,7 +983,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={3611.866,12.016004,13022.919};
-			angle=4.8350849;
+			angle=4.8350844;
 			class Attributes
 			{
 				sizeA=280;
@@ -1122,7 +1145,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={11717.583,13.186495,13746.493};
-			angle=2.1149373;
+			angle=2.1149371;
 			class Attributes
 			{
 				sizeA=215;
@@ -8224,6 +8247,97 @@ class Mission
 					{
 						rank="MAJOR";
 						isPlayable=1;
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="arifle_MX_GL_F";
+								optics="optic_Hamr";
+								flashlight="acc_pointer_IR";
+								class primaryMuzzleMag
+								{
+									name="30Rnd_65x39_caseless_mag";
+									ammoLeft=30;
+								};
+								class secondaryMuzzleMag
+								{
+									name="1Rnd_HE_Grenade_shell";
+									ammoLeft=1;
+								};
+							};
+							class binocular
+							{
+								name="Binocular";
+							};
+							class uniform
+							{
+								typeName="U_B_CombatUniform_mcam_vest";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="30Rnd_65x39_caseless_mag";
+										count=2;
+										ammoLeft=30;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="V_PlateCarrierGL_rgr";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=3;
+									class Item0
+									{
+										name="30Rnd_65x39_caseless_mag";
+										count=1;
+										ammoLeft=30;
+									};
+									class Item1
+									{
+										name="30Rnd_65x39_caseless_mag_Tracer";
+										count=2;
+										ammoLeft=30;
+									};
+									class Item2
+									{
+										name="1Rnd_HE_Grenade_shell";
+										count=5;
+										ammoLeft=1;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							radio="ItemRadio";
+							gps="ItemGPS";
+							goggles="G_Combat";
+							hmd="NVGoggles";
+							headgear="H_HelmetSpecB";
+						};
 					};
 					id=1344;
 					type="B_Soldier_TL_F";
@@ -8880,7 +8994,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={27796.471,5.0424905,23648.148};
-			angle=2.1149373;
+			angle=2.1149371;
 			class Attributes
 			{
 				sizeA=100;
@@ -8955,7 +9069,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={23715.822,5.3025584,16242.208};
-			angle=3.9814019;
+			angle=3.9814017;
 			class Attributes
 			{
 				sizeA=160;
@@ -9044,7 +9158,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={20100.211,18.242836,20049.061};
-			angle=3.9814019;
+			angle=3.9814017;
 			class Attributes
 			{
 				sizeA=140;
@@ -9093,7 +9207,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={17066.727,23.887089,11332.563};
-			angle=3.9814019;
+			angle=3.9814017;
 			class Attributes
 			{
 				sizeA=140;
@@ -9222,7 +9336,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={22753.467,18.265915,13577.189};
-			angle=3.9814019;
+			angle=3.9814017;
 			class Attributes
 			{
 				sizeA=110;
@@ -9235,7 +9349,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={20896.932,2.5875392,14628.845};
-			angle=3.9814019;
+			angle=3.9814017;
 			class Attributes
 			{
 				sizeA=180;
