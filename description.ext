@@ -9,7 +9,7 @@ dev = "Arma 3 Community";
 author = "Arma 3 Community";
 allowFunctionsLog = 1;
 zeusCompositionScriptLevel = 2;
-//adminIDs[] = {"76561198034106257", "76561198865298977"};
+//adminIDs[] = {"xxxxx", "xxxxx"};
 
 //Settings
 respawn = 3;
@@ -48,8 +48,8 @@ class Header
 	maxPlayers = 90;
 };
 
-#include "mp_securityCommands.hpp"
-#include "mp_securityFunctions.hpp"
+//#include "mp_securityCommands.hpp" These are disabled, see file for more details
+//#include "mp_securityFunctions.hpp" These are disabled, see file for more details
 #include "functions.hpp"
 
 #include "configs.hpp"
@@ -60,15 +60,5 @@ class Header
 #include "briefings.hpp"
 
 /*
-class CfgUnitInsignia
-{
-	class InsigniaMrThomasM
-	{
-		displayName = "MrThomasM's Development";
-		author = "MrThomasM";
-		texture = "img\insignia_ca.paa";
-		material = "\A3\Ui_f\data\GUI\Cfg\UnitInsignia\default_insignia.rvmat";
-		textureVehicle = "";
-	};
-};
+addition cfg items can go here
 */ 
