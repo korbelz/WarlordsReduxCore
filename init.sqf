@@ -27,3 +27,19 @@ BIS_fnc_WL2_varsInit = compileFinal preprocessFileLineNumbers "Functions\common\
 MRTM_fnc_execCode = compileFinal preprocessFileLineNumbers "Scripts\MRTMDebug\fn_execCode.sqf";
 
 call BIS_fnc_WL2_initCommon;
+
+// random start time script by Champ-1, This code block needs a toggle for framework
+if (isServer) then {
+if (random 1 <= 0.90) then {
+	myNewTime = 5.5 + random 13; // day
+} else {
+	if (random 1 <= 0.66) then {
+		myNewTime = random 5.5; // night 
+	} else {
+		myNewTime = 18.5 + random 5.5; // evening
+	};
+};
+publicVariable "myNewTime";
+};	
+waitUntil{not isNil "myNewTime"};
+skipTime myNewTime;
