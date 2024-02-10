@@ -1,3 +1,11 @@
+/*
+refactor this code using the populate sector code from miller edition
+need toggles in warlords_conts
+need the weighted loadfactionclasses file 
+*/
+
+
+
 params ["_sector", "_owner"];
 
 private _units = [];
