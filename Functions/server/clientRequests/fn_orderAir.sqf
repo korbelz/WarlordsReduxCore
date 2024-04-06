@@ -83,11 +83,14 @@ if (_class == "B_UAV_02_dynamicLoadout_F" || _class == "B_T_UAV_03_dynamicLoadou
 				_array = (_sector call BIS_fnc_WL2_findSpawnPositions);
 				_pos1 = (_array # (_array findIf {(((abs ([_x, 0] call BIS_fnc_terrainGradAngle)) < 5) && ((abs ([_x, 90] call BIS_fnc_terrainGradAngle)) < 5))}));
 				_posFinal = _pos1 findEmptyPosition [0, 20, _class];
-				//systemchat format ["Code block #4 run, Spawned: %1", _class]; //Heli spawn code
-				_asset = createVehicle [_class, _posFinal, [], 1, "NONE"];
+				if (count _posFinal == 0) then {
+					_posFinal = _pos1;
+					//systemchat "findEmptyPosition failed, backup mode";
+				};
+				//systemchat format ["Code block #4 run, Spawned: %1", _class]; //Heli spawn code, non airport sectors
+				_asset = createVehicle [_class, _posFinal, [], 0, "FLY"]; //change this to "none" to spawn helis on ground
 				_asset setDir 0;
-				_pos2 = getPosATL _asset;
-				//_asset setVehiclePosition [[_pos2 # 0, _pos2 # 1, ((_pos2 # 2) + 0.5)], [], 0, "CAN_COLLIDE"];
+								
 			} else {
 				private _sector = ((_pos nearObjects ["Logic", 10]) select {count (_x getVariable ["BIS_WL_runwaySpawnPosArr", []]) > 0}) # 0;
 				private _taxiNodes = _sector getVariable "BIS_WL_runwaySpawnPosArr";
@@ -120,3 +123,4 @@ _asset enableWeaponDisassembly false;
 _owner = owner _sender;
 _asset setVariable ["BIS_WL_ownerAsset", (getPlayerUID _sender), [2, _owner]];
 [_asset, _sender] remoteExec ["BIS_fnc_WL2_newAssetHandle", _owner];
+_sender setVariable ["BIS_WL_isOrdering", false, [2, _owner]];
