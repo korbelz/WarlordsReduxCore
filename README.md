@@ -14,16 +14,14 @@ https://github.com/Gamer-Dad/warlordsredux.altis
 
 Includes contributions and tech from the following projects as well.
 
-Open Warlords
+Open Warlords - MIT licence
 https://github.com/aaannnndd/OWL
 
-Open Warlords Redux'd
-https://github.com/korbelz/OWLKorb
 
-Warlords Redux: Miller edition
+Warlords Redux: Miller edition - APL-SA (Arma public licence - Share alike)
 https://github.com/korbelz/WarlordsReduxMe.altis
 
-Warlords Maverick
+Warlords Maverick - APL-SA (Arma public licence - Share alike)
 https://github.com/korbelz/WarlordsReduxMav.altis
 
 
