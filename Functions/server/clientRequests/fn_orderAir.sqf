@@ -22,6 +22,7 @@ if (_class == "B_UAV_02_dynamicLoadout_F" || _class == "B_T_UAV_03_dynamicLoadou
 		} forEach units _grp;
 		_asset setDir (direction _sender);
 	} else {
+		//spawning aircraft on airfields
 		private _sector = ((_pos nearObjects ["Logic", 10]) select {count (_x getVariable ["BIS_WL_runwaySpawnPosArr", []]) > 0}) # 0;
 		private _taxiNodes = _sector getVariable "BIS_WL_runwaySpawnPosArr";
 		private _taxiNodesCnt = count _taxiNodes;
@@ -50,6 +51,7 @@ if (_class == "B_UAV_02_dynamicLoadout_F" || _class == "B_T_UAV_03_dynamicLoadou
 		_asset setDir _dir;
 	};
 } else {
+	//spawning vtols on the ground at airfields?
 	_isPlane = (toLower getText (configFile >> "CfgVehicles" >> _class >> "simulation")) in ["airplanex", "airplane"] && {!(_class isKindOf "VTOL_Base_F")};
 	if (_isPlane) then {
 		private _sector = ((_pos nearObjects ["Logic", 10]) select {count (_x getVariable ["BIS_WL_runwaySpawnPosArr", []]) > 0}) # 0;
@@ -78,6 +80,7 @@ if (_class == "B_UAV_02_dynamicLoadout_F" || _class == "B_T_UAV_03_dynamicLoadou
 			createVehicleCrew _asset;
 			(group _asset) deleteGroupWhenEmpty true;
 		} else {
+			//Heli spawn code
 			if (isNil {((_pos nearObjects ["Logic", 10]) select {count (_x getVariable ["BIS_WL_runwaySpawnPosArr", []]) > 0}) # 0}) then {
 				_sector = (((BIS_WL_allSectors) select {((_x distance2D _pos) < 15)}) # 0);
 				_array = (_sector call BIS_fnc_WL2_findSpawnPositions);
@@ -88,8 +91,9 @@ if (_class == "B_UAV_02_dynamicLoadout_F" || _class == "B_T_UAV_03_dynamicLoadou
 					//systemchat "findEmptyPosition failed, backup mode";
 				};
 				//systemchat format ["Code block #4 run, Spawned: %1", _class]; //Heli spawn code, non airport sectors
-				_asset = createVehicle [_class, _posFinal, [], 0, "FLY"]; //change this to "none" to spawn helis on ground
-				_asset setDir 0;
+				_asset = createVehicle [_class, _posFinal, [], 0, "NONE"]; //change this to "none" to spawn helis on ground
+				//_asset setVelocity [0, 0, 0];
+				//[_asset, _sender, _class] call BIS_fnc_WL2_sub_assetLanding;
 								
 			} else {
 				private _sector = ((_pos nearObjects ["Logic", 10]) select {count (_x getVariable ["BIS_WL_runwaySpawnPosArr", []]) > 0}) # 0;
