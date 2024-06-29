@@ -91,9 +91,9 @@ if (_class == "B_UAV_02_dynamicLoadout_F" || _class == "B_T_UAV_03_dynamicLoadou
 					//systemchat "findEmptyPosition failed, backup mode";
 				};
 				//systemchat format ["Code block #4 run, Spawned: %1", _class]; //Heli spawn code, non airport sectors
-				_asset = createVehicle [_class, _posFinal, [], 0, "NONE"]; //change this to "none" to spawn helis on ground
-				//_asset setVelocity [0, 0, 0];
-				//[_asset, _sender, _class] call BIS_fnc_WL2_sub_assetLanding;
+				_asset = createVehicle [_class, _posFinal, [], 0, "FLY"]; //change this to "none" to spawn helis on ground
+				_asset setVelocity [0, 0, 0];
+				[_asset, _sender, _class] call BIS_fnc_WL2_sub_assetLanding;
 								
 			} else {
 				private _sector = ((_pos nearObjects ["Logic", 10]) select {count (_x getVariable ["BIS_WL_runwaySpawnPosArr", []]) > 0}) # 0;
