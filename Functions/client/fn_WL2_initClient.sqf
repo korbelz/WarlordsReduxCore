@@ -57,7 +57,6 @@ BIS_fnc_WL2_targetResetHandleVote = compileFinal preprocessFileLineNumbers "Func
 BIS_fnc_WL2_targetSelected = compileFinal preprocessFileLineNumbers "Functions\client\fn_WL2_targetSelected.sqf";
 BIS_fnc_WL2_targetSelectionHandleClient = compileFinal preprocessFileLineNumbers "Functions\client\fn_WL2_targetSelectionHandleClient.sqf";
 BIS_fnc_WL2_teammatesAvailability = compileFinal preprocessFileLineNumbers "Functions\client\fn_WL2_teammatesAvailability.sqf";
-BIS_fnc_WL2_timer = compileFinal preprocessFileLineNumbers "Functions\client\fn_WL2_timer.sqf";
 BIS_fnc_WL2_wasMain = compileFinal preprocessFileLineNumbers "Functions\client\fn_WL2_wasMain.sqf";
 BIS_fnc_WL2_welcome = compileFinal preprocessFileLineNumbers "Functions\client\fn_WL2_welcome.sqf";
 BIS_fnc_WL2_zoneRestrictionHandleClient = compileFinal preprocessFileLineNumbers "Functions\client\fn_WL2_zoneRestrictionHandleClient.sqf";
@@ -75,7 +74,7 @@ BIS_fnc_WL2_sub_rearmAction = compileFinal preprocessFileLineNumbers "Functions\
 BIS_fnc_WL2_sub_rearmActionAir = compileFinal preprocessFileLineNumbers "Functions\subroutines\fn_WL2_sub_rearmActionAir.sqf";
 BIS_fnc_WL2_sub_removeAction = compileFinal preprocessFileLineNumbers "Functions\subroutines\fn_WL2_sub_removeAction.sqf";
 BIS_fnc_WL2_sub_vehicleLockAction = compileFinal preprocessFileLineNumbers "Functions\subroutines\fn_WL2_sub_vehicleLockAction.sqf";
-BIS_fnc_WL2_sub_vehicleLockAction = compileFinal preprocessFileLineNumbers "Functions\subroutines\fn_WL2_sub_assetLanding.sqf";
+BIS_fnc_WL2_sub_assetLanding = compileFinal preprocessFileLineNumbers "Functions\subroutines\fn_WL2_sub_assetLanding.sqf";
 
 BIS_fnc_WL2_vehicleRearm = compileFinal preprocessFileLineNumbers "Functions\client\rearming\fn_WL2_vehicleRearm.sqf";
 BIS_fnc_animate = compileFinal preprocessFileLineNumbers "Functions\client\rearming\fn_animate.sqf";
@@ -220,7 +219,7 @@ call BIS_fnc_WL2_targetResetHandle;
 [player, "init"] spawn BIS_fnc_WL2_hintHandle;
 
 ["OSD"] spawn BIS_fnc_WL2_setupUI;
-0 spawn BIS_fnc_WL2_timer;
+
 0 spawn BIS_fnc_WL2_cpBalance;
 
 0 spawn {
