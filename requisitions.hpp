@@ -32,8 +32,7 @@ class CfgWLRequisitionPresets
 			};
 			class Vehicles
 			{
-				class B_Quadbike_01_F						{cost =  20;	requirements[]={};	};	// "Quad Bike"
-				//class B_LSV_01_unarmed_F					{cost = 100;	requirements[]={};	};	// "Prowler (Unarmed)"
+				//class B_Quadbike_01_F						{cost =  20;	requirements[]={};	};	// "Quad Bike"
 				class B_MRAP_01_F							{cost = 300;	requirements[]={};	};	// "Hunter"
 				class B_LSV_01_armed_F						{cost = 200;	requirements[]={};	};	// "Prowler (HMG)"
 				class B_G_Offroad_01_armed_F				{cost = 150;	requirements[]={};	};	// "Offroad (HMG)"
@@ -44,9 +43,7 @@ class CfgWLRequisitionPresets
 				class B_Truck_01_ammo_F						{cost = 1000;	requirements[]={};	};	// "HEMTT Ammo"
 				class B_Truck_01_Repair_F					{cost = 1000;	requirements[]={};	};	// "HEMTT Repair"
 				class B_Truck_01_fuel_F						{cost = 1000;	requirements[]={};	};	// "HEMTT Fuel"
-				class O_T_Truck_03_device_ghex_F            {cost = 1500;	requirements[]={};	};	// "Tempest Device"
-				class B_Truck_01_transport_F				{cost = 200;	requirements[]={};	};	// "HEMTT Transport"
-				class B_Truck_01_flatbed_F					{cost = 500;	requirements[]={};	};	// "HEMTT Flatbed"	
+				//class B_Truck_01_transport_F				{cost = 200;	requirements[]={};	};	// "HEMTT Transport"
 				class B_APC_Wheeled_03_cannon_F				{cost = 2500;	requirements[]={};	};	// "BLUFOR Gorgon"
 				class B_APC_Wheeled_01_cannon_F				{cost = 3200;	requirements[]={};	};	// "AMV-7 Marshall"
 				class B_APC_Tracked_01_rcws_F				{cost = 1800;	requirements[]={};	};	// "IFV-6c Panther"
@@ -101,11 +98,6 @@ class CfgWLRequisitionPresets
 			class Defences
 			{
 				
-				class Land_BagFence_Round_F					{cost = 50;		requirements[]={};	offset[]={0, 2, 0};};	// "Semi Circle Sand bags"  
-				class Land_Razorwire_F						{cost = 50;		requirements[]={};	offset[]={0, 5, 0};};	// "Razor Wire Fence"  
-				class Land_DragonsTeeth_01_1x1_new_F		{cost = 50;		requirements[]={};	offset[]={0, 2, 0};};	// "Tank barrier"    	  	
-				class CamoNet_BLUFOR_big_F					{cost = 100;	requirements[]={};	offset[]={0, 6, 0};};	// "Camouflage Vehicle Cover (Green)"    	
-				class Land_IRMaskingCover_01_F				{cost = 200;	requirements[]={};	offset[]={0, 8, 0};};	// "IR Masking Tent (Large)"
 				class B_HMG_01_F							{cost = 150;	requirements[]={};	};	// "Mk30 HMG .50"  
 				class B_HMG_01_high_F						{cost = 200;	requirements[]={};	};	// "Mk30 HMG .50 (Raised)" 
 				class B_GMG_01_F							{cost = 200;	requirements[]={};	};	// "Mk32 GMG 20mm"  
@@ -115,9 +107,9 @@ class CfgWLRequisitionPresets
 				class B_static_AT_F							{cost = 300;	requirements[]={};	};	// "Static Titan Launcher (AT) [NATO]"  
 				class B_static_AA_F							{cost = 300;	requirements[]={};	};	// "Static Titan Launcher (AA) [NATO]"  
 				class B_Mortar_01_F							{cost = 3000;	requirements[]={};	};	// "Mortar"
-				class B_UGV_02_Demining_F					{cost = 100;	requirements[]={};	};	// "UGAS demining"  
-				class B_UGV_01_F							{cost = 150;	requirements[]={};	offset[]={0, 3, 0};};	// "UGV Stomper"   
-				class B_UGV_01_rcws_F 						{cost = 400;	requirements[]={};	offset[]={0, 3, 0};};	// "UGAS" 				
+				class B_UGV_02_Demining_F					{cost = 1000;	requirements[]={};	};	// "UGAS demining"  
+				class B_UGV_01_F							{cost = 2500;	requirements[]={};	offset[]={0, 3, 0};};	// "UGV Stomper"   
+				class B_UGV_01_rcws_F 						{cost = 4000;	requirements[]={};	offset[]={0, 3, 0};};	// "UGAS" 				
 				class B_UAV_01_F							{cost = 500;    requirements[]={};	};  // AR-2
 				class B_UAV_06_F							{cost = 1000;	requirements[]={};  };  // "AR-6"
 				class B_Ship_Gun_01_F						{cost = 10000;	requirements[]={};	offset[]={0, 9, 0};};	// "MK45 Hammer"  
@@ -158,8 +150,7 @@ class CfgWLRequisitionPresets
 			};
 			class Vehicles
 			{
-				class O_Quadbike_01_F						{cost = 20;		requirements[]={};	};	// "Quad Bike"
-				//class O_LSV_02_unarmed_F					{cost = 100;	requirements[]={};	};	// "Qilin (Unarmed)"
+				//class O_Quadbike_01_F						{cost = 20;		requirements[]={};	};	// "Quad Bike"
 				class O_MRAP_02_F							{cost = 300;	requirements[]={};	};	// "Ifrit"
 				class O_LSV_02_armed_F						{cost = 200;	requirements[]={};	};	// "Qilin (Minigun)"
 				class O_G_Offroad_01_armed_F				{cost = 150;	requirements[]={};	};	// "Offroad (HMG)"
@@ -170,9 +161,7 @@ class CfgWLRequisitionPresets
 				class O_Truck_03_ammo_F						{cost = 1000;	requirements[]={};	};	// "Tempest Ammo"
 				class O_Truck_03_Repair_F					{cost = 1000;	requirements[]={};	};	// "Tempest Repair"
 				class O_Truck_03_Fuel_F						{cost = 1000;	requirements[]={};	};	// "Tempest Fuel"
-				class O_Truck_03_device_F            		{cost = 1500;	requirements[]={};	};	// "Tempest Device"
-				class O_Truck_03_transport_F				{cost = 200;	requirements[]={};	};	// "Tempest Transport"
-				class B_Truck_01_flatbed_F					{cost = 500;	requirements[]={};	};	// "HEMTT Flatbed"
+				//class O_Truck_03_transport_F				{cost = 200;	requirements[]={};	};	// "Tempest Transport"
 				class O_APC_Wheeled_02_rcws_v2_F			{cost = 1500;	requirements[]={};	};	// "MSE-3 Marid"
 				class O_APC_Tracked_02_cannon_F				{cost = 2800;	requirements[]={};	};	// "BTR-K Kamysh"
 				class O_APC_Tracked_02_AA_F					{cost = 6000;	requirements[]={};	};	// "ZSU-39 Tigris"
@@ -223,11 +212,6 @@ class CfgWLRequisitionPresets
 			};
 			class Defences
 			{
-				class Land_BagFence_Round_F					{cost = 50;	requirements[]={};		offset[]={0, 2, 0};};	// "Semi Circle Sand bags"  
-				class Land_Razorwire_F						{cost = 50;	requirements[]={};		offset[]={0, 5, 0};};	// "Razor Wire Fence"  
-				class Land_DragonsTeeth_01_1x1_new_F		{cost = 50;	requirements[]={};		offset[]={0, 2, 0};};	// "Tank barrier"    	 	
-				class CamoNet_OPFOR_big_F					{cost = 100;	requirements[]={};	offset[]={0, 6, 0};};	// "Camouflage Vehicle Cover (Hex)"    	
-				class Land_IRMaskingCover_01_F				{cost = 200;	requirements[]={};	offset[]={0, 8, 0};};	// "IR Masking Tent (Large)" 
 				class O_HMG_01_F							{cost = 150;	requirements[]={};	};	// "Mk30 HMG .50"  
 				class O_HMG_01_high_F						{cost = 200;	requirements[]={};	};	// "Mk30 HMG .50 (Raised)"
 				class O_GMG_01_F							{cost = 200;	requirements[]={};	};	// "Mk32 GMG 20 mm"
@@ -237,9 +221,9 @@ class CfgWLRequisitionPresets
 				class O_HMG_01_A_F							{cost = 500;	requirements[]={};	};	// "Mk30 HMG Auto Turret"
 				class O_GMG_01_A_F							{cost = 650;	requirements[]={};	};	// "Mk30 GMG Auto Turret"
 				class O_Mortar_01_F							{cost = 3000;	requirements[]={};	};	// "Mortar"  
-				class O_UGV_02_Demining_F					{cost = 100;	requirements[]={};	offset[]={0, 3, 0};};	// "UGAV demining"  
-				class O_UGV_01_F							{cost = 150;	requirements[]={};	offset[]={0, 3, 0};};	// "UGV Stomper"   
-				class O_UGV_01_rcws_F						{cost = 400;	requirements[]={};	};	// "UGAV rcws"  
+				class O_UGV_02_Demining_F					{cost = 1000;	requirements[]={};	offset[]={0, 3, 0};};	// "UGAV demining"  
+				class O_UGV_01_F							{cost = 2500;	requirements[]={};	offset[]={0, 3, 0};};	// "UGV Stomper"   
+				class O_UGV_01_rcws_F						{cost = 4000;	requirements[]={};	};	// "UGAV rcws"  
 				class O_UAV_01_F       						{cost = 500;    requirements[]={};  };  // AR-2
 				class O_UAV_06_F						{cost = 1000;	requirements[]={};  };  // "AR-6"
 				class O_Radar_System_02_F					{cost = 1000;	requirements[]={};	offset[]={0, 7, 0};};	// "R-750 Cronus Radar"  

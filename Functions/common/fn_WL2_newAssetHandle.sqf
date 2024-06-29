@@ -46,13 +46,7 @@ if (isPlayer _owner) then {
 						_asset call BIS_fnc_WL2_sub_dazzlerAction;
 					};
 
-					if (typeOf _asset == "B_Truck_01_flatbed_F" || {typeOf _asset == "B_T_VTOL_01_vehicle_F" || {typeOf _asset == "O_T_VTOL_02_vehicle_dynamicLoadout_F"}}) then {
-						_asset call BIS_fnc_WL2_sub_logisticsAddAction;
-						if (side _owner == east && {typeOf _asset == "B_Truck_01_flatbed_F"}) then {
-							_asset setObjectTextureGlobal [0, "A3\Soft_F_Exp\Truck_01\Data\Truck_01_ext_01_olive_CO.paa"];
-							_asset setObjectTextureGlobal [2, "A3\Soft_F_EPC\Truck_03\Data\Truck_03_ammo_CO.paa"];
-						};
-					};
+					
 				};
 			} else {
 				_asset spawn {
@@ -141,15 +135,7 @@ if (isPlayer _owner) then {
 			_asset call BIS_fnc_WL2_sub_vehicleLockAction;
 		};
 
-		if (profileNamespace getVariable ["MRTM_spawnEmpty", false]) then {
-			if (typeOf _asset != "B_supplyCrate_F" && {typeOf _asset != "O_supplyCrate_F"}) then {
-				if !((typeOf _asset) in (getArray (missionConfigFile >> "logisticsConfig" >> "cargoTypes" >> "Cargo"))) then {
-					clearMagazineCargoGlobal _asset;
-					clearItemCargoGlobal _asset;
-					clearWeaponCargoGlobal _asset;
-				};
-			};
-		};
+		
 		
 		_asset spawn {
 			params ["_asset"];
