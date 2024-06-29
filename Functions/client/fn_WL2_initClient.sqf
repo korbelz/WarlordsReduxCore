@@ -5,7 +5,6 @@
 BIS_fnc_WL2_announcer = compileFinal preprocessFileLineNumbers "Functions\client\fn_WL2_announcer.sqf";
 BIS_fnc_WL2_askForgiveness = compileFinal preprocessFileLineNumbers "Functions\client\fn_WL2_askForgiveness.sqf";
 BIS_fnc_WL2_assetMapControl = compileFinal preprocessFileLineNumbers "Functions\client\fn_WL2_assetMapControl.sqf";
-BIS_fnc_WL2_betty = compileFinal preprocessFileLineNumbers "Functions\client\fn_WL2_betty.sqf";
 BIS_fnc_WL2_blockScreen = compileFinal preprocessFileLineNumbers "Functions\client\fn_WL2_blockScreen.sqf";
 BIS_fnc_WL2_clientEH = compileFinal preprocessFileLineNumbers "Functions\client\fn_WL2_clientEH.sqf";
 BIS_fnc_WL2_cpBalance = compileFinal preprocessFileLineNumbers "Functions\client\fn_WL2_cpBalance.sqf";
@@ -38,7 +37,6 @@ BIS_fnc_WL2_orderVehicle = compileFinal preprocessFileLineNumbers "Functions\cli
 BIS_fnc_WL2_refreshCurrentTargetData = compileFinal preprocessFileLineNumbers "Functions\client\fn_WL2_refreshCurrentTargetData.sqf";
 BIS_fnc_WL2_refreshOSD = compileFinal preprocessFileLineNumbers "Functions\client\fn_WL2_refreshOSD.sqf";
 BIS_fnc_WL2_requestPurchase = compileFinal preprocessFileLineNumbers "Functions\client\fn_WL2_requestPurchase.sqf";
-BIS_fnc_WL2_rita = compileFinal preprocessFileLineNumbers "Functions\client\fn_WL2_rita.sqf";
 BIS_fnc_WL2_sceneDrawHandle = compileFinal preprocessFileLineNumbers "Functions\client\fn_WL2_sceneDrawHandle.sqf";
 BIS_fnc_WL2_sectorCaptureStatus = compileFinal preprocessFileLineNumbers "Functions\client\fn_WL2_sectorCaptureStatus.sqf";
 BIS_fnc_WL2_sectorMarkerUpdate = compileFinal preprocessFileLineNumbers "Functions\client\fn_WL2_sectorMarkerUpdate.sqf";

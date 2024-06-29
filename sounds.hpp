@@ -37,30 +37,7 @@ class CfgSounds {
         titles[] = {};	
 	};
 
-	class pullUpRita {
-        name="Pull up rita";
-        sound[]={"sounds\AngleOfAttackOverLimit.ogg", 1, 1};
-        titles[] = {};
-	};
-
-	class altRita {
-        name="Alt rita";
-		sound[]={"sounds\PullUp.ogg", 1, 1};
-        titles[] = {};
-	};
-
-	class sensorRita {
-        name="sensorWarning rita";
-        sound[]={"sounds\sensorWarning.ogg", 1, 1};
-        titles[] = {};
-	};
-
-	class fuelRita {
-        name="fuel low rita";
-        sound[]={"sounds\BingoFuel.ogg", 1, 1};
-        titles[] = {};
-	};
-
+	
 	class incMissile_0 {
         name="incomming 0";
         sound[]={"sounds\critical_missile12.ogg", 1, 1};
