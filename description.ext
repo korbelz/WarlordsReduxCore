@@ -50,10 +50,7 @@ class Header
 //#include "mp_securityCommands.hpp" These are disabled, see file for more details
 //#include "mp_securityFunctions.hpp" These are disabled, see file for more details
 #include "functions.hpp"
-
 #include "configs.hpp"
-
-#include "titles.hpp"
 #include "requisitions.hpp"
 #include "sounds.hpp"
 #include "briefings.hpp"

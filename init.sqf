@@ -3,13 +3,7 @@
 APS_fnc_DefineVehicles = compileFinal preprocessFile "scripts\APS\Scripts\DefineVehicles.sqf";
 0 spawn APS_fnc_DefineVehicles;
 
-if !(isDedicated) then {
-	private _fncEarPlugsCredit = compileFinal preprocessFileLineNumbers "scripts\GF_Earplugs\Credits.sqf";
-	call _fncEarPlugsCredit;
 
-	waitUntil { !isNull player };
-	0 spawn KS_fnc_unflipVehicleAddAction;
-};
 /*******************************END OF SCRIPTS****************************/
 
 BIS_fnc_WL2_findSpawnPositions = compileFinal preprocessFileLineNumbers "Functions\common\fn_WL2_findSpawnPositions.sqf";

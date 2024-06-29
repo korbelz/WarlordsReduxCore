@@ -241,8 +241,7 @@ call BIS_fnc_WL2_targetResetHandle;
 0 spawn BIS_fnc_WL2_targetSelectionHandleClient;
 0 spawn BIS_fnc_WL2_assetMapControl;
 0 spawn BIS_fnc_WL2_mapIcons;
-private _fncEarPlugs = compile preprocessFileLineNumbers "scripts\GF_Earplugs\GF_Earplugs.sqf";
-0 spawn _fncEarPlugs;
+
 
 ["client_init"] call BIS_fnc_endLoadingScreen;
 "Initialized" call BIS_fnc_WL2_announcer;

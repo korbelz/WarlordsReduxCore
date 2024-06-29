@@ -2,6 +2,7 @@
 Marking for refactor, add switch case with toggle in warlords_constants. 3 selects: none, simple(miller edition style), complex(Warsim vets style)
 */
 
+/*
 "RequestMenu_close" call BIS_fnc_WL2_setupUI;
 
 createDialog ["welcomeScreen", true];
@@ -196,4 +197,4 @@ while {dialog} do {
 		};
 	};
 	sleep 0.1;
-};
+}; */
