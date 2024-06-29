@@ -383,16 +383,7 @@ class MRTM_settingsMenu
 				shadow = 1;
 			};
 		};
-		class MRTMdiscordImg: RscPictureMRTM
-		{
-			idc = -1;
-			text = "img\discord_ca.paa";
-			style = ST_MULTI + ST_TITLE_BAR;
-			x = 0.493344 * safezoneW + safezoneX;
-			y = 0.236 * safezoneH + safezoneY;
-			w = 0.014244 * safezoneW;
-			h = 0.022 * safezoneH;
-		};
+		
 		class MRTMMainCtrlsGroup: RscControlsGroupMRTM
 		{
 			deletable = 0;
