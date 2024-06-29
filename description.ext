@@ -1,8 +1,7 @@
 #include "Functions\warlords_constants.inc"
 #include "ui\defines.hpp"
 #include "ui\controls.hpp"
-#include "scripts\GOM\dialogs\GOM_dialog_parents.hpp"
-#include "scripts\GOM\dialogs\GOM_dialog_controls.hpp"
+
 
 onLoadName = "Warlords Redux: Core";
 dev = "Arma 3 Community";
@@ -53,7 +52,7 @@ class Header
 #include "functions.hpp"
 
 #include "configs.hpp"
-#include "communicationMenu.hpp"
+
 #include "titles.hpp"
 #include "requisitions.hpp"
 #include "sounds.hpp"

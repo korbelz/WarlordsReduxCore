@@ -22,7 +22,7 @@ while {alive _asset} do {
 							_curWeapon = currentWeapon _asset;
 							_asset selectWeapon _curWeapon;
 
-							[player] spawn GOM_fnc_aircraftLoadout;
+							//[player] spawn GOM_fnc_aircraftLoadout;
 							_rearmTime = ((missionNamespace getVariable "BIS_WL2_rearmTimers") getOrDefault [(typeOf _asset), 600]);
 							_asset setVariable ["BIS_WL_nextRearm", serverTime + _rearmTime]; 
 							

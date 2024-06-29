@@ -10,13 +10,7 @@ class CfgFunctions {
 			class openMenu {};
 		};
 	};
-	class GOM {
-		class init
-		{
-			file = "scripts\GOM\functions";
-			class aircraftLoadoutInit {preInit = 1;};
-		};
-	};
+	
 	class KS
 	{	
 		class normalFunctions
