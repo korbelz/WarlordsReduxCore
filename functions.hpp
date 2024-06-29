@@ -21,41 +21,7 @@ class CfgFunctions {
 			class isFlipped {};
 		};
 	};
-	class APS
-	{
-		class APS 
-		{
-			file = "scripts\APS\Scripts\APS";
-			class SetupProjectiles {};
-			class FiredProjectile {};
-		};
-		class Management
-		{
-			file = "scripts\APS\Scripts\Management";
-			class RearmAPS {};
-			class RegisterVehicle {};
-		};
-		class MISC
-		{
-			file = "scripts\APS\Scripts\Misc";
-			class Active {};
-			class CountAmmo {};
-			class GetDirection {};
-			class HasCharges {};
-			class IsIRguided {};
-			class IsLaserGuided {};
-			class IsRadarGuided {};
-			class IsVisualGuided {};
-			class MisguideMissile {};
-			class RelDir2 {};
-			class getMaxAmmo {};
-		};
-		class Report
-		{
-			file = "scripts\APS\Scripts\Report";
-			class Report {};
-		};
-	};
+	
 	class DIS {
 		class SAM
 		{

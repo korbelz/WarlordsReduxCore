@@ -3,10 +3,8 @@
 params ["_asset", ["_owner", objNull]];
 
 if (isServer && {isNull _owner}) exitWith {
-	if !(_asset isKindOf "Man") then {
-		call APS_fnc_RegisterVehicle;
-	};
-	_asset call APS_fnc_SetupProjectiles;
+	
+	
 	_asset setSkill (0.2 + random 0.3);
 };
 
@@ -14,15 +12,14 @@ if (isPlayer _owner) then {
 	WAS_store = true;
 
 	if (_asset isKindOf "Man") then {
-		_asset call APS_fnc_SetupProjectiles;
+		
 		_asset addEventHandler ["Killed", {
 			missionNamespace setVariable ["WL2_manLost", true];
 			BIS_WL_matesAvailable = (BIS_WL_matesAvailable - 1) max 0;
 			false spawn BIS_fnc_WL2_refreshOSD;
 		}];
 	} else {
-		call APS_fnc_RegisterVehicle;
-		_asset call APS_fnc_SetupProjectiles;
+		
 		_asset setVariable ["BIS_WL_nextRepair", 0];
 		
 		private _defaultMags = [];

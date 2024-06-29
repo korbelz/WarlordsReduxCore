@@ -1,8 +1,5 @@
 /*******************************START OF SCRIPTS****************************/
 
-APS_fnc_DefineVehicles = compileFinal preprocessFile "scripts\APS\Scripts\DefineVehicles.sqf";
-0 spawn APS_fnc_DefineVehicles;
-
 
 /*******************************END OF SCRIPTS****************************/
 

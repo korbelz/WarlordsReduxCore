@@ -115,9 +115,7 @@ if ((getPlayerUID player) in (getArray (missionConfigFile >> "adminIDs"))) then 
 		private _viewKey = actionKeys "tacticalView";
 		_e = ((_key in _viewKey || {_key in _zeusKey}) && {!((getPlayerUID player) in (getArray (missionConfigFile >> "adminIDs")))});
 
-		if (inputAction "cycleThrownItems" > 0.01) exitWith {
-			[vehicle player, 0, false] spawn APS_fnc_Report;
-		};
+		
 
 		if (_key in actionKeys "Gear" && {!(missionNamespace getVariable ["BIS_WL_gearKeyPressed", false]) && {alive player && {!BIS_WL_penalized}}}) then {
 			if !(isNull (uiNamespace getVariable ["BIS_WL_purchaseMenuDisplay", displayNull])) then {
