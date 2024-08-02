@@ -115,9 +115,9 @@ dlcs[]=
 randomSeed=3694325;
 class ScenarioData
 {
-	author="Jezuro+WSV";
-	overviewText="Warlords Redux introduces hundreds of improvements of the original Warlords.";
-	overViewPicture="img\wl_logo_ca.paa";
+	author="Jezuro and many others";
+	overviewText="Warlords Redux Core is a simplified and customizable Warlords";
+	overViewPicture="img\Warlords_core_thumb.paa";
 	wreckManagerMode=1;
 	wreckLimit=10;
 	wreckRemovalMaxTime=300;
@@ -131,7 +131,7 @@ class Mission
 {
 	class Intel
 	{
-		briefingName="Warlords 2.5 (Redux) | WSV";
+		briefingName="Warlords Redux Core";
 		resistanceWest=0;
 		timeOfChanges=1800.0002;
 		startWeather=0.30000001;
@@ -8536,7 +8536,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={28256.43,22.457317,25683.475};
-			angle=2.1149373;
+			angle=2.1149371;
 			class Attributes
 			{
 				sizeA=200;
@@ -8701,7 +8701,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={20080.627,101.07696,6726.7739};
-			angle=2.2371628;
+			angle=2.2371624;
 			class Attributes
 			{
 				sizeA=150;
@@ -8726,7 +8726,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={23059.529,49.055279,7274.6079};
-			angle=3.9814069;
+			angle=3.9814065;
 			class Attributes
 			{
 				sizeA=150;
