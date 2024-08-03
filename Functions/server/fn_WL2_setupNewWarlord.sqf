@@ -6,7 +6,7 @@ _owner = owner _warlord;
 private _uid = getPlayerUID _warlord;
 private _pFunds = (serverNamespace getVariable "fundsDatabase") getOrDefault [_uid, -1];
 if (_pFunds == -1) then {
-	1000 call BIS_fnc_WL2_fundsDatabaseWrite;
+	50 call BIS_fnc_WL2_fundsDatabaseWrite; //Starting CP value
 } else {
 	0 call BIS_fnc_WL2_fundsDatabaseWrite;
 };
