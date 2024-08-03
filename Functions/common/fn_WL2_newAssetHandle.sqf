@@ -41,60 +41,8 @@ if (isPlayer _owner) then {
 					_asset spawn BIS_fnc_WL2_sub_rearmActionAir;
 				} else {
 					_asset spawn BIS_fnc_WL2_sub_rearmAction;
-					if (typeOf _asset == "O_T_Truck_03_device_ghex_F" || {typeOf _asset == "O_Truck_03_device_F"}) then {
-						_asset setVariable ["dazzlerActivated", false];
-						_asset call BIS_fnc_WL2_sub_dazzlerAction;
-					};
-
-					
 				};
-			} else {
-				_asset spawn {
-					params ["_asset"];
-					[
-						driver _asset,
-						format["<t color='#E5E500' shadow='2'>&#160;%1</t>", "*Arm Drone*"],
-						"\a3\ui_f_oldman\data\IGUI\Cfg\holdactions\attack_ca.paa",
-						"\a3\ui_f_oldman\data\IGUI\Cfg\holdactions\attack_ca.paa",
-						"!(isNull (getConnectedUAVUnit player))",
-						"!(isNull (getConnectedUAVUnit player))",
-						{ 
-							playSound3D ["a3\sounds_f\sfx\objects\upload_terminal\terminal_antena_close.wss", (getConnectedUAVUnit player), false, getPosASL (getConnectedUAVUnit player), 1, 1, 0];
-						},
-						{},
-						{
-							(getConnectedUAVUnit player) addEventHandler ["Killed", { params ["_unit", "_killer", "_instigator", "_useEffects"]; 
-								_expl = createVehicle ["IEDUrbanBig_Remote_Ammo", (getPos _unit), [], 0, "FLY"]; 
-								triggerAmmo _expl; 
-								deleteVehicle (getConnectedUAV player);
-							}];
-							[
-								getConnectedUAVUnit player,
-								format["<t color='#f80e1a' shadow='2'>&#160;%1</t>", "*Detonate*"],
-								"\a3\ui_f_oldman\data\IGUI\Cfg\holdactions\destroy_ca.paa",
-								"\a3\ui_f_oldman\data\IGUI\Cfg\holdactions\destroy_ca.paa",
-								"!(isNull (getConnectedUAVUnit player))",
-								"!(isNull (getConnectedUAVUnit player))",
-								{},
-								{},
-								{ 
-									_expl = createVehicle ["IEDUrbanBig_Remote_Ammo", (getPos (getConnectedUAVUnit player)), [], 0, "FLY"]; 
-									(getConnectedUAVUnit player) removeAllEventHandlers "Killed";
-									deleteVehicle (getConnectedUAV player);
-									triggerAmmo _expl;
-								},
-								{},
-								[],
-								1
-							] call BIS_fnc_holdActionAdd;
-						},
-						{},
-						[],
-						2
-					] call BIS_fnc_holdActionAdd;
-				
-				};
-			};
+			}; 
 		} else {
 			_rearmTime = ((missionNamespace getVariable "BIS_WL2_rearmTimers") getOrDefault [(typeOf _asset), 600]);
 			_asset setVariable ["BIS_WL_nextRearm", serverTime + _rearmTime];
