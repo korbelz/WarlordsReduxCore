@@ -281,7 +281,7 @@ serverNamespace setVariable ["WL2_cappingValues",
 
 serverNamespace setVariable ["WL2_costs",
 	createHashMapFromArray [
-		//***Blufor Inf*** 
+		//***Blufor Inf Costs*** 
 		["B_Soldier_F", 20], //rifleman
 		["B_soldier_PG_F", 25], 
 		["B_CTRG_Soldier_tna_F", 30], 
@@ -305,7 +305,7 @@ serverNamespace setVariable ["WL2_costs",
 		["B_Sharpshooter_F", 80],
 		["B_sniper_F", 100], 
 		["B_Captain_Dwarden_F", 150], 
-		//***OPFOR Inf***
+		//***OPFOR Inf Costs***
 		["O_Soldier_F", 20], 
 		["O_soldier_PG_F", 25], 
 		["O_V_Soldier_hex_F", 40], 
@@ -328,12 +328,12 @@ serverNamespace setVariable ["WL2_costs",
 		["O_Sharpshooter_F", 80], 
 		["O_sniper_F", 100], 
 		["O_soldier_HAT_F", 200],
-		//***Blufor Vics***/ 
+		//***Blufor Vics Costs***/ 
 		["B_Quadbike_01_F", 20],
 		["B_LSV_01_unarmed_F", 100], 
 		["B_MRAP_01_F", 300], 
 		["B_LSV_01_armed_F", 200], 
-		["B_G_Offroad_01_armed_F", 150], 
+		["B_G_Offroad_01_armed_F", 550], 
 		["B_LSV_01_AT_F", 750], 
 		["B_G_Offroad_01_AT_F", 500],
 		["B_MRAP_01_hmg_F", 1000], 
@@ -354,12 +354,12 @@ serverNamespace setVariable ["WL2_costs",
 		["B_MBT_01_TUSK_F", 7000], 
 		["B_MBT_01_arty_F", 20000], 
 		["B_MBT_01_mlrs_F", 20000], 
-		//***OPFOR Vics***
+		//***OPFOR Vics Costs***
 		["O_Quadbike_01_F", 20], 
 		["O_LSV_02_unarmed_F", 100], 
 		["O_MRAP_02_F", 300], 
 		["O_LSV_02_armed_F", 200], 
-		["O_G_Offroad_01_armed_F", 150], 
+		["O_G_Offroad_01_armed_F", 550], 
 		["O_LSV_02_AT_F", 750], 
 		["O_G_Offroad_01_AT_F", 500],
 		["O_MRAP_02_hmg_F", 1000], 
@@ -378,30 +378,30 @@ serverNamespace setVariable ["WL2_costs",
 		["O_MBT_04_command_F", 15000], 
 		["O_MBT_02_railgun_F", 16000],
 		["O_MBT_02_arty_F", 20000],
-		//***Indy Vics***
+		//***Indy Vics Costs***
 		["I_Truck_02_MRL_F", 18000],
 		["I_MBT_03_cannon_F", 7000],
-		//***Blufor Air*** 
-		["B_Heli_Light_01_F", 300], 
-		["B_Heli_Transport_01_F", 800], 
-		["B_Heli_Transport_03_F", 1000], 
-		["B_Heli_Light_01_dynamicLoadout_F", 2500],
+		//***Blufor Air Costs*** 
+		["B_Heli_Light_01_F", 1300], 
+		["B_Heli_Transport_01_F", 1800], 
+		["B_Heli_Transport_03_F", 2000], 
+		["B_Heli_Light_01_dynamicLoadout_F", 3500],
 		["B_UAV_02_dynamicLoadout_F", 12000], 
 		["B_Heli_Attack_01_dynamicLoadout_F", 13000], 
 		["B_T_UAV_03_dynamicLoadout_F", 12000], 
 		["B_UAV_05_F", 20000],
-		["B_T_VTOL_01_infantry_F", 2000], 
-		["B_T_VTOL_01_vehicle_F", 2000], 
+		["B_T_VTOL_01_infantry_F", 3000], 
+		["B_T_VTOL_01_vehicle_F", 3000], 
 		["B_T_VTOL_01_armed_F", 8000], 
 		["B_Plane_CAS_01_dynamicLoadout_F", 15000], 
 		["B_Plane_Fighter_01_F", 30000], 
 		["B_Plane_Fighter_01_Stealth_F", 35000],
-		//***OPFOR Air***/
-		["O_Heli_Light_02_unarmed_F", 500],
-		["O_Heli_Transport_04_F", 500], 
-		["O_Heli_Transport_04_covered_F", 400], 
-		["O_Heli_Transport_04_medevac_F", 500], 
-		["O_Heli_Light_02_dynamicLoadout_F", 4000], 
+		//***OPFOR Air Costs***/
+		["O_Heli_Light_02_unarmed_F", 1500],
+		["O_Heli_Transport_04_F", 1500], 
+		["O_Heli_Transport_04_covered_F", 1400], 
+		["O_Heli_Transport_04_medevac_F", 1500], 
+		["O_Heli_Light_02_dynamicLoadout_F", 5000], 
 		["O_T_UAV_04_CAS_F", 8000], 
 		["O_Heli_Attack_02_dynamicLoadout_F", 10000], 
 		["O_UAV_02_dynamicLoadout_F", 10000], 
@@ -409,20 +409,20 @@ serverNamespace setVariable ["WL2_costs",
 		["O_Plane_CAS_02_dynamicLoadout_F", 20000], 
 		["O_Plane_Fighter_02_F", 32000], 
 		["O_Plane_Fighter_02_Stealth_F", 28000],
-		//***Indy Air***/
+		//***Indy Air Costs***/
 		["I_Plane_Fighter_03_dynamicLoadout_F", 15000], 
 		["I_Plane_Fighter_04_F", 23000],
-		//***Civ Water***/
+		//***Civ Water Costs***/
 		["C_Scooter_Transport_01_F", 50], 
-		//***Blufor Water***/
+		//***Blufor Water Costs***/
 		["B_Boat_Transport_01_F", 100], 
 		["B_Boat_Armed_01_minigun_F", 500], 
 		["B_SDV_01_F", 250],
-		//***OPFOR Water***/
+		//***OPFOR Water Costs***/
 		["O_Boat_Transport_01_F", 100], 
 		["O_Boat_Armed_01_hmg_F", 500], 
 		["O_SDV_01_F", 250],
-		//***Blufor Crates***/
+		//***Blufor Crates Costs***/
 		["Box_NATO_Ammo_F", 100], 
 		["Box_NATO_Grenades_F", 100], 
 		["Box_NATO_Wps_F", 100], 
@@ -436,7 +436,7 @@ serverNamespace setVariable ["WL2_costs",
 		["B_Slingload_01_Ammo_F", 500], 
 		["B_Slingload_01_Repair_F", 500], 
 		["B_Slingload_01_Fuel_F", 300],
-		//***OPFOR Crates***/
+		//***OPFOR Crates Costs***/
 		["Box_East_Ammo_F", 100], 
 		["Box_East_Grenades_F", 100], 
 		["Box_East_Wps_F", 100], 
@@ -450,14 +450,14 @@ serverNamespace setVariable ["WL2_costs",
 		["Land_Pod_Heli_Transport_04_ammo_F", 500],
 		["Land_Pod_Heli_Transport_04_repair_F", 500], 
 		["Land_Pod_Heli_Transport_04_fuel_F", 300],
-		//***Defense items***/
+		//***Defense items Costs***/
 		["Land_BagFence_Round_F", 50], 
 		["Land_Razorwire_F", 50], 
 		["Land_DragonsTeeth_01_1x1_new_F", 50], 
 		["CamoNet_OPFOR_big_F", 100], 
 		["CamoNet_BLUFOR_big_F", 100], 
 		["Land_IRMaskingCover_01_F", 200],
-		//***Blufor Defense items***/
+		//***Blufor Defense items Costs***/
 		["B_HMG_01_F", 150], 
 		["B_HMG_01_high_F", 200], 
 		["B_GMG_01_F", 200], 
@@ -479,7 +479,7 @@ serverNamespace setVariable ["WL2_costs",
 		["B_SAM_System_03_F", 8000], 
 		["B_SAM_System_02_F", 15000], 
 		["B_Ship_MRLS_01_F", 30000],
-		//***OPFOR Defense items***/
+		//***OPFOR Defense items Costs***/
 		["O_HMG_01_F", 150], 
 		["O_HMG_01_high_F", 200], 
 		["O_GMG_01_F", 200], 

@@ -33,9 +33,9 @@ class CfgWLRequisitionPresets
 			class Vehicles
 			{
 				//class B_Quadbike_01_F						{cost =  20;	requirements[]={};	};	// "Quad Bike"
-				class B_MRAP_01_F							{cost = 300;	requirements[]={};	};	// "Hunter"
-				class B_LSV_01_armed_F						{cost = 200;	requirements[]={};	};	// "Prowler (HMG)"
-				class B_G_Offroad_01_armed_F				{cost = 150;	requirements[]={};	};	// "Offroad (HMG)"
+				//class B_MRAP_01_F							{cost = 300;	requirements[]={};	};	// "Hunter"
+				//class B_LSV_01_armed_F						{cost = 200;	requirements[]={};	};	// "Prowler (HMG)"
+				class B_G_Offroad_01_armed_F				{cost = 550;	requirements[]={};	};	// "Offroad (HMG)"
 				class B_LSV_01_AT_F							{cost = 750;	requirements[]={};	};	// "Prowler (AT)"
 				class B_G_Offroad_01_AT_F					{cost = 500;	requirements[]={};	};	// "Offroad (AT)"
 				class B_MRAP_01_hmg_F						{cost = 1000;	requirements[]={};	};	// "Hunter HMG"
@@ -57,16 +57,16 @@ class CfgWLRequisitionPresets
 			};
 			class Aircraft
 			{
-				class B_Heli_Light_01_F						{cost = 300;	requirements[]={"H"};	};	// "MH-9 Hummingbird"
-				class B_Heli_Transport_01_F					{cost = 800;	requirements[]={"H"};	};	// "UH-80 Ghost Hawk"
-				class B_Heli_Transport_03_F					{cost = 1000;	requirements[]={"H"};	};	// "CH-67 Huron"
-				class B_Heli_Light_01_dynamicLoadout_F		{cost = 2500;	requirements[]={"H"};	};	// "AH-9 Pawnee"
+				class B_Heli_Light_01_F						{cost = 1300;	requirements[]={"H"};	};	// "MH-9 Hummingbird"
+				class B_Heli_Transport_01_F					{cost = 1800;	requirements[]={"H"};	};	// "UH-80 Ghost Hawk"
+				class B_Heli_Transport_03_F					{cost = 2000;	requirements[]={"H"};	};	// "CH-67 Huron"
+				class B_Heli_Light_01_dynamicLoadout_F		{cost = 3500;	requirements[]={"H"};	};	// "AH-9 Pawnee"
 				class B_UAV_02_dynamicLoadout_F         	{cost = 12000;  requirements[]={"A"};   };  // "Greyhawk"
 				class B_Heli_Attack_01_dynamicLoadout_F		{cost = 13000;	requirements[]={"H"};	};	// "AH-99 Blackfoot"
 				class B_T_UAV_03_dynamicLoadout_F			{cost = 13000;  requirements[]={"H"};   };  // "Falcon"
 				class B_UAV_05_F							{cost = 20000;  requirements[]={"A"};   };  // "Sentinel"
-				class B_T_VTOL_01_infantry_F				{cost = 2000;	requirements[]={"A"};	};	// "V-44 X Blackfish(Inf)"
-				class B_T_VTOL_01_vehicle_F					{cost = 2000;	requirements[]={"A"};	};	// "V-44 X Blackfish(Vic)"
+				class B_T_VTOL_01_infantry_F				{cost = 3000;	requirements[]={"A"};	};	// "V-44 X Blackfish(Inf)"
+				class B_T_VTOL_01_vehicle_F					{cost = 3000;	requirements[]={"A"};	};	// "V-44 X Blackfish(Vic)"
 				class B_T_VTOL_01_armed_F					{cost = 8000;	requirements[]={"A"};	};	// "V-44 X Blackfish (Armed)"
 				class B_Plane_CAS_01_dynamicLoadout_F		{cost = 15000;	requirements[]={"A"};	};	// "A-164 Wipeout (CAS)"
 				class B_Plane_Fighter_01_F					{cost = 30000;	requirements[]={"A"};	};	// "F/A-181 Black Wasp II"
@@ -151,9 +151,9 @@ class CfgWLRequisitionPresets
 			class Vehicles
 			{
 				//class O_Quadbike_01_F						{cost = 20;		requirements[]={};	};	// "Quad Bike"
-				class O_MRAP_02_F							{cost = 300;	requirements[]={};	};	// "Ifrit"
-				class O_LSV_02_armed_F						{cost = 200;	requirements[]={};	};	// "Qilin (Minigun)"
-				class O_G_Offroad_01_armed_F				{cost = 150;	requirements[]={};	};	// "Offroad (HMG)"
+				//class O_MRAP_02_F							{cost = 300;	requirements[]={};	};	// "Ifrit"
+				//class O_LSV_02_armed_F						{cost = 200;	requirements[]={};	};	// "Qilin (Minigun)"
+				class O_G_Offroad_01_armed_F				{cost = 550;	requirements[]={};	};	// "Offroad (HMG)"
 				class O_LSV_02_AT_F							{cost = 750;	requirements[]={};	};	// "Qilin (AT)"
 				class O_G_Offroad_01_AT_F					{cost = 500;	requirements[]={};	};	// "Offroad (AT)"
 				class O_MRAP_02_hmg_F						{cost = 1000;	requirements[]={};	};	// "Ifrit HMG"
@@ -174,11 +174,11 @@ class CfgWLRequisitionPresets
 			};
 			class Aircraft
 			{	  
-				class O_Heli_Light_02_unarmed_F				{cost = 500;	requirements[]={"H"};	};	// "PO-30 Orca (Unarmed)"  
-				class O_Heli_Transport_04_F					{cost = 500;	requirements[]={"H"};	};	// "Mi-290 Taru"  
-				class O_Heli_Transport_04_covered_F			{cost = 400;	requirements[]={"H"};	};	// "Mi-290 Taru (Transport)"  
-				class O_Heli_Transport_04_medevac_F 		{cost = 500;	requirements[]={"H"};	};	// "Mi-290 Taru (Medical)"
-				class O_Heli_Light_02_dynamicLoadout_F		{cost = 4000;	requirements[]={"H"};	};	// "PO-30 Orca" 
+				class O_Heli_Light_02_unarmed_F				{cost = 1500;	requirements[]={"H"};	};	// "PO-30 Orca (Unarmed)"  
+				class O_Heli_Transport_04_F					{cost = 1500;	requirements[]={"H"};	};	// "Mi-290 Taru"  
+				class O_Heli_Transport_04_covered_F			{cost = 1400;	requirements[]={"H"};	};	// "Mi-290 Taru (Transport)"  
+				class O_Heli_Transport_04_medevac_F 		{cost = 1500;	requirements[]={"H"};	};	// "Mi-290 Taru (Medical)"
+				class O_Heli_Light_02_dynamicLoadout_F		{cost = 5000;	requirements[]={"H"};	};	// "PO-30 Orca" 
 				class O_T_UAV_04_CAS_F						{cost = 8000;	requirements[]={"A"};	};	// "KH-3A Fenghuang"
 				class O_Heli_Attack_02_dynamicLoadout_F		{cost = 10000;	requirements[]={"H"};	};	// "Mi-48 Kajman"   
 				class O_UAV_02_dynamicLoadout_F	  			{cost = 10000;	requirements[]={"A"};	};	// "K40 Ababil-3"				    
