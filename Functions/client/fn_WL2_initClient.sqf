@@ -88,8 +88,10 @@ waitUntil {!isNull player && {isPlayer player}};
 "client" call BIS_fnc_WL2_varsInit;
 waitUntil {!(isNil "BIS_WL_playerSide")};
 
+
+private _uid = getPlayerUID player;
 if (["(EU) #11", serverName] call BIS_fnc_inString) then {
-	private _uid = getPlayerUID player;
+	
 	private _switch = format ["teamBlocked_%1", _uid];
 	waitUntil {!isNil {missionNamespace getVariable _switch}};
 	if (missionNamespace getVariable _switch) exitWith {
