@@ -16,22 +16,7 @@ if (getNumber (configFile >> "CfgVehicles" >> _class >> "isUav") == 1) then {
 		//Livery change
 		_side = side _sender;
 		if (typeOf _asset == "B_AAA_System_01_F") then {
-			if (_side == east) then {
-				_asset setObjectTextureGlobal [0, "A3\static_f_jets\AAA_System_01\data\AAA_system_01_olive_co.paa"];
-				_asset setObjectTextureGlobal [1, "A3\static_f_jets\AAA_System_01\data\AAA_system_02_olive_co.paa"];
-			};
-		} else {
-			if (typeOf _asset == "B_SAM_System_01_F") then {
-				if (_side == east) then {
-					_asset setObjectTextureGlobal [0, "A3\static_f_jets\SAM_System_01\data\SAM_system_01_olive_co.paa"];
-				};
-			} else {
-				if (typeOf _asset == "B_SAM_System_02_F") then {
-					if (_side == east) then {
-						_asset setObjectTextureGlobal [0, "A3\static_f_jets\SAM_System_02\data\SAM_system_02_olive_co.paa"];
-					};
-				};
-			};
+		
 		};
 	} else {
 		_asset = createVehicle [_class, _pos, [], 0, "CAN_COLLIDE"];
@@ -39,9 +24,7 @@ if (getNumber (configFile >> "CfgVehicles" >> _class >> "isUav") == 1) then {
 		_group deleteGroupWhenEmpty true;
 	};
 
-	if (_asset call DIS_fnc_IsSam) then {
-		_asset spawn DIS_fnc_RegisterSam;
-	};
+	
 } else {
 	_asset = createVehicle [_class, _pos, [], 0, "CAN_COLLIDE"];
 };

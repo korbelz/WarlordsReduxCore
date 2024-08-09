@@ -10,9 +10,8 @@ class CfgFunctions {
 			class openMenu {};
 		};
 	};
-	
-		
-	class DIS {
+	//example of where to place item for scripts
+	/*class DIS {
 		class SAM
 		{
 			file = "scripts\DIS";
@@ -22,5 +21,5 @@ class CfgFunctions {
 			class IsSam {};
 			class SAMmaneuver {};
 		};
-	};
+	};*/
 };
