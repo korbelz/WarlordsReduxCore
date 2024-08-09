@@ -115,22 +115,7 @@ if (["(EU) #11", serverName] call BIS_fnc_inString) then {
 		[localize "STR_A3_WL_switch_teams", localize "STR_A3_WL_switch_teams_info"] call BIS_fnc_WL2_blockScreen;
 	};
 	missionNamespace setVariable [_switch, nil];
-
 	
-	_text = toLower (name player);
-	_list = getArray (missionConfigFile >> "adminFilter");
-	if ((_list findIf {[_x, _text] call BIS_fnc_inString}) != -1) exitWith {
-		["client_init"] call BIS_fnc_endLoadingScreen;
-		player removeItem "ItemMap";
-		player removeItem "ItemRadio";
-		[player] joinSilent BIS_WL_wrongTeamGroup;
-		enableRadio false;
-		enableSentences false;
-		0 fadeSpeech 0;
-		0 fadeRadio 0;
-		{_x enableChannel [false, false]} forEach [0,1,2,3,4,5];
-		[localize "STR_A3_nameFilter", localize "STR_A3_nameFilter_info"] call BIS_fnc_WL2_blockScreen;	
-	};
 };
 
 if !(BIS_WL_playerSide in BIS_WL_competingSides) exitWith {
