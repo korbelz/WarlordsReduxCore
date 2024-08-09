@@ -11,6 +11,7 @@ if (_pFunds == -1) then {
 	0 call BIS_fnc_WL2_fundsDatabaseWrite;
 };
 
+//Team switch and team balance setters
 _varSwitch = format ["teamBlocked_%1", _uid];
 _varImb = format ["balanceBlocked_%1", _uid];
 _sideW = side group _warlord;
@@ -36,7 +37,7 @@ if (_boundToTeam) then {
 		_friendlyCnt = playersNumber _sideW;
 		_enemyside = ([west, east] select {_x != _sideW}) # 0;
 		_enemyCnt = playersNumber _enemyside;
-		_imb = ((_friendlyCnt - _enemyCnt) > 3);
+		_imb = ((_friendlyCnt - _enemyCnt) > 9);
 		if (_imb) then {
 			_pList set [_uid, [true, _enemyside]];
 			serverNamespace setVariable ["playerList", _pList];
