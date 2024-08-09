@@ -6,19 +6,19 @@ class CfgWLRequisitionPresets
 		{
 			class Infantry
 			{
-				class B_Soldier_F 							{cost = 20;		requirements[]={};	};	// "Rifleman"
-				class B_soldier_PG_F						{cost = 25;		requirements[]={};	};	// "Para Trooper"
-				class B_CTRG_Soldier_tna_F					{cost = 30;		requirements[]={};	};	// "CTRG Scout"
-				class B_crew_F 								{cost = 15;		requirements[]={};	};	// "Crewman"
-				class B_Helipilot_F 						{cost = 10;		requirements[]={};	};	// "Helicopter Pilot"
-				class B_Pilot_F 							{cost = 10;		requirements[]={};	};	// "Pilot"
-				class B_Soldier_GL_F 						{cost = 50;		requirements[]={};	};	// "Grenadier"				
+				//class B_Soldier_F 							{cost = 20;		requirements[]={};	};	// "Rifleman"
+				//class B_soldier_PG_F						{cost = 25;		requirements[]={};	};	// "Para Trooper"
+				//class B_CTRG_Soldier_tna_F					{cost = 30;		requirements[]={};	};	// "CTRG Scout"
+				//class B_crew_F 								{cost = 15;		requirements[]={};	};	// "Crewman"
+				//class B_Helipilot_F 						{cost = 10;		requirements[]={};	};	// "Helicopter Pilot"
+				//class B_Pilot_F 							{cost = 10;		requirements[]={};	};	// "Pilot"
+				//class B_Soldier_GL_F 						{cost = 50;		requirements[]={};	};	// "Grenadier"				
 				class B_medic_F								{cost = 20;		requirements[]={};	};	// "Combat Life Saver"
-				class B_soldier_AR_F						{cost = 50;		requirements[]={};	};	// "Autorifleman"
-				class B_Soldier_A_F							{cost = 25;		requirements[]={};	};	// "Ammo Bearer"
+				//class B_soldier_AR_F						{cost = 50;		requirements[]={};	};	// "Autorifleman"
+				//class B_Soldier_A_F							{cost = 25;		requirements[]={};	};	// "Ammo Bearer"
 				class B_soldier_M_F							{cost = 60;		requirements[]={};	};	// "Marksman"
 				class B_diver_F								{cost = 50;		requirements[]={};	};  // "Assault Diver"
-				class B_diver_exp_F							{cost = 80; 	requirements[]={};	};  // "Diver Explosive Specialist"
+				//class B_diver_exp_F							{cost = 80; 	requirements[]={};	};  // "Diver Explosive Specialist"
 				class B_soldier_repair_F					{cost = 100;	requirements[]={};	};	// "Repair Specialist"
 				class B_HeavyGunner_F						{cost = 80;		requirements[]={};	};	// "Heavy Gunner"
 				class B_soldier_LAT_F						{cost = 100;	requirements[]={};	};	// "Rifleman (AT)"
@@ -74,7 +74,6 @@ class CfgWLRequisitionPresets
 			};
 			class Naval
 			{
-				class C_Scooter_Transport_01_F				{cost = 50;		requirements[]={"W"};	};	// "Water scooter"
 				class B_Boat_Transport_01_F					{cost = 100;	requirements[]={"W"};	};	// "Assault Boat"
 				class B_Boat_Armed_01_minigun_F				{cost = 500;	requirements[]={"W"};	};	// "Speedboat Minigun"
 				class B_SDV_01_F							{cost = 250;	requirements[]={"W"};	};	// "SDV"
@@ -99,11 +98,11 @@ class CfgWLRequisitionPresets
 			{
 				
 				class B_HMG_01_F							{cost = 150;	requirements[]={};	};	// "Mk30 HMG .50"  
-				class B_HMG_01_high_F						{cost = 200;	requirements[]={};	};	// "Mk30 HMG .50 (Raised)" 
+				//class B_HMG_01_high_F						{cost = 200;	requirements[]={};	};	// "Mk30 HMG .50 (Raised)" 
 				class B_GMG_01_F							{cost = 200;	requirements[]={};	};	// "Mk32 GMG 20mm"  
-				class B_GMG_01_high_F						{cost = 250;	requirements[]={};	};	// "Mk32 GMG 20mm (Raised)"				
-				class B_HMG_01_A_F							{cost = 500;	requirements[]={};	};	// "Mk30 HMG Auto Turret"
-				class B_GMG_01_A_F							{cost = 650;	requirements[]={};	};	// "Mk30 GMG Auto Turret"
+				//class B_GMG_01_high_F						{cost = 250;	requirements[]={};	};	// "Mk32 GMG 20mm (Raised)"				
+				//class B_HMG_01_A_F							{cost = 500;	requirements[]={};	};	// "Mk30 HMG Auto Turret"
+				//class B_GMG_01_A_F							{cost = 650;	requirements[]={};	};	// "Mk30 GMG Auto Turret"
 				class B_static_AT_F							{cost = 300;	requirements[]={};	};	// "Static Titan Launcher (AT) [NATO]"  
 				class B_static_AA_F							{cost = 300;	requirements[]={};	};	// "Static Titan Launcher (AA) [NATO]"  
 				class B_Mortar_01_F							{cost = 3000;	requirements[]={};	};	// "Mortar"
@@ -125,19 +124,19 @@ class CfgWLRequisitionPresets
 		{
 			class Infantry
 			{
-				class O_Soldier_F							{cost = 20;		requirements[]={};	};	// "Rifleman"
-				class O_soldier_PG_F						{cost = 25;		requirements[]={};	};	// "Para Trooper"
-				class O_V_Soldier_hex_F						{cost = 40;		requirements[]={};	};	// "Viper Rifleman"
-				class O_crew_F 								{cost = 15;		requirements[]={};	};	// "Crewman"
-				class O_Helipilot_F 						{cost = 10;		requirements[]={};	};	// "Helicopter Pilot"
-				class O_Pilot_F 							{cost = 10;		requirements[]={};	};	// "Pilot"
-				class O_Soldier_GL_F						{cost = 50;		requirements[]={};	};	// "Grenadier"
+				//class O_Soldier_F							{cost = 20;		requirements[]={};	};	// "Rifleman"
+				//class O_soldier_PG_F						{cost = 25;		requirements[]={};	};	// "Para Trooper"
+				//class O_V_Soldier_hex_F						{cost = 40;		requirements[]={};	};	// "Viper Rifleman"
+				//class O_crew_F 								{cost = 15;		requirements[]={};	};	// "Crewman"
+				//class O_Helipilot_F 						{cost = 10;		requirements[]={};	};	// "Helicopter Pilot"
+				//class O_Pilot_F 							{cost = 10;		requirements[]={};	};	// "Pilot"
+				//class O_Soldier_GL_F						{cost = 50;		requirements[]={};	};	// "Grenadier"
 				class O_medic_F								{cost = 20;		requirements[]={};	};	// "Combat Life Saver"
-				class O_soldier_AR_F						{cost = 50;		requirements[]={};	};	// "Autorifleman"
-				class O_Soldier_A_F							{cost = 25;		requirements[]={};	};	// "Ammo Bearer"
+				//class O_soldier_AR_F						{cost = 50;		requirements[]={};	};	// "Autorifleman"
+				//class O_Soldier_A_F							{cost = 25;		requirements[]={};	};	// "Ammo Bearer"
 				class O_soldier_M_F							{cost = 60;		requirements[]={};	};	// "Marksman"
 				class O_diver_F								{cost = 50;		requirements[]={};	};  // "Assault Diver"
-				class O_diver_exp_F							{cost = 80; 	requirements[]={};	};  // "Diver Explosive Specialist"
+				//class O_diver_exp_F							{cost = 80; 	requirements[]={};	};  // "Diver Explosive Specialist"
 				class O_soldier_repair_F					{cost = 100;	requirements[]={};	};	// "Repair Specialist"
 				class O_HeavyGunner_F						{cost = 80;		requirements[]={};	};	// "Heavy Gunner"
 				class O_soldier_LAT_F						{cost = 100;	requirements[]={};	};	// "Rifleman (AT)"
@@ -189,7 +188,6 @@ class CfgWLRequisitionPresets
 			};
 			class Naval
 			{
-				class C_Scooter_Transport_01_F				{cost = 50;		requirements[]={"W"};	};	// "Water scooter"
 				class O_Boat_Transport_01_F					{cost = 100;	requirements[]={"W"};	};	// "Assault Boat"
 				class O_Boat_Armed_01_hmg_F					{cost = 250;	requirements[]={"W"};	};	// "Speedboat HMG"
 				class O_SDV_01_F							{cost = 650;	requirements[]={"W"};	};	// "SDV"
@@ -213,13 +211,13 @@ class CfgWLRequisitionPresets
 			class Defences
 			{
 				class O_HMG_01_F							{cost = 150;	requirements[]={};	};	// "Mk30 HMG .50"  
-				class O_HMG_01_high_F						{cost = 200;	requirements[]={};	};	// "Mk30 HMG .50 (Raised)"
+				//class O_HMG_01_high_F						{cost = 200;	requirements[]={};	};	// "Mk30 HMG .50 (Raised)"
 				class O_GMG_01_F							{cost = 200;	requirements[]={};	};	// "Mk32 GMG 20 mm"
-				class O_GMG_01_high_F						{cost = 250;	requirements[]={};	};	// "Mk32 GMG 20 mm (Raised)"
+				//class O_GMG_01_high_F						{cost = 250;	requirements[]={};	};	// "Mk32 GMG 20 mm (Raised)"
 				class O_static_AT_F							{cost = 300;	requirements[]={};	};	// "Static Titan Launcher (AT) [CSAT]"  
 				class O_static_AA_F							{cost = 300;	requirements[]={};	};	// "Static Titan Launcher (AA) [CSAT]"  
-				class O_HMG_01_A_F							{cost = 500;	requirements[]={};	};	// "Mk30 HMG Auto Turret"
-				class O_GMG_01_A_F							{cost = 650;	requirements[]={};	};	// "Mk30 GMG Auto Turret"
+				//class O_HMG_01_A_F							{cost = 500;	requirements[]={};	};	// "Mk30 HMG Auto Turret"
+				//class O_GMG_01_A_F							{cost = 650;	requirements[]={};	};	// "Mk30 GMG Auto Turret"
 				class O_Mortar_01_F							{cost = 3000;	requirements[]={};	};	// "Mortar"  
 				class O_UGV_02_Demining_F					{cost = 1000;	requirements[]={};	offset[]={0, 3, 0};};	// "UGAV demining"  
 				class O_UGV_01_F							{cost = 2500;	requirements[]={};	offset[]={0, 3, 0};};	// "UGV Stomper"   
