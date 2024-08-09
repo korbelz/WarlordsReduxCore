@@ -11,17 +11,7 @@ class CfgFunctions {
 		};
 	};
 	
-	class KS
-	{	
-		class normalFunctions
-		{
-			file = "scripts\VUnflip\functions";
-			class unflipVehicle {};
-			class unflipVehicleAddAction {};
-			class isFlipped {};
-		};
-	};
-	
+		
 	class DIS {
 		class SAM
 		{

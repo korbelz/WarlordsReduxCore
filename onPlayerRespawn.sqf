@@ -1,5 +1,5 @@
 params ["_newUnit", "_oldUnit", "_respawn", "_respawnDelay"];
-0 spawn KS_fnc_unflipVehicleAddAction;
+
 
 _leader = (leader group _newUnit);
 if ((_newUnit != _leader) && {(alive _leader) && {((_oldUnit distance2D _leader) < 200) && {isPlayer _leader}}}) then {
@@ -22,5 +22,4 @@ if !(["(EU) #11", serverName] call BIS_fnc_inString) then {
 		{[player, "10K"] remoteExec ["BIS_fnc_WL2_handleClientRequest", 2];}
 	];
 };
-player linkItem"Integrated_NVG_TI_0_F";
-player addPrimaryWeaponItem "muzzle_snds_H";
+
