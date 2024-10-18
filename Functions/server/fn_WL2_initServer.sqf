@@ -24,7 +24,6 @@ BIS_fnc_WL2_forgiveTeamkill = compileFinal preprocessFileLineNumbers "Functions\
 BIS_fnc_WL2_friendlyFireHandleServer = compileFinal preprocessFileLineNumbers "Functions\server\fn_WL2_friendlyFireHandleServer.sqf";
 BIS_fnc_WL2_fundsDatabaseUpdate = compileFinal preprocessFileLineNumbers "Functions\server\fn_WL2_fundsDatabaseUpdate.sqf";
 BIS_fnc_WL2_fundsDatabaseWrite = compileFinal preprocessFileLineNumbers "Functions\server\fn_WL2_fundsDatabaseWrite.sqf";
-BIS_fnc_WL2_garbageCollector = compileFinal preprocessFileLineNumbers "Functions\server\fn_WL2_garbageCollector.sqf";
 BIS_fnc_WL2_handleClientRequest = compileFinal preprocessFileLineNumbers "Functions\server\fn_WL2_handleClientRequest.sqf";
 BIS_fnc_WL2_incomePayoff = compileFinal preprocessFileLineNumbers "Functions\server\fn_WL2_incomePayoff.sqf";
 BIS_fnc_WL2_killRewardHandle = compileFinal preprocessFileLineNumbers "Functions\server\fn_WL2_killRewardHandle.sqf";
@@ -71,10 +70,9 @@ if !(isDedicated) then {
 0 spawn BIS_fnc_WL2_targetSelectionHandleServer;
 0 spawn BIS_fnc_WL2_zoneRestrictionHandleServer;
 0 spawn BIS_fnc_WL2_incomePayoff;
-0 spawn BIS_fnc_WL2_garbageCollector;
 call BIS_fnc_WL2_processRunways;
 
-setTimeMultiplier 8;
+setTimeMultiplier 8; //TODO: update to miller edition
 0 spawn {
 	while {!BIS_WL_missionEnd} do {
 		_overcastPreset = random 1;

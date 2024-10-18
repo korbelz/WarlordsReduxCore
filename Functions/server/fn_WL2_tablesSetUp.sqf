@@ -393,26 +393,5 @@ serverNamespace setVariable ["WL2_factionAircraftClasses", [
 	"I_Plane_Fighter_04_F"
 ]];
 
-serverNamespace setVariable ["garbageCollector", 
-	createHashMapFromArray [
-		["B_Ejection_Seat_Plane_Fighter_01_F", true],
-		["O_Ejection_Seat_Plane_Fighter_02_F", true],
-		["I_Ejection_Seat_Plane_Fighter_03_F", true],
-		["B_Ejection_Seat_Plane_CAS_01_F", true],
-		["O_Ejection_Seat_Plane_CAS_02_F", true],
-		["Plane_Fighter_03_Canopy_F", true],
-		["Plane_CAS_02_Canopy_F", true],
-		["Plane_CAS_01_Canopy_F", true],
-		["Plane_Fighter_01_Canopy_F", true],
-		["Plane_Fighter_02_Canopy_F", true],
-		["Plane_Fighter_04_Canopy_F", true] //<--no comma on last item
-	]
-];
 
-serverNamespace setVariable ["camoGarbageCollector", 
-	createHashMapFromArray [
-		["CamoNet_BLUFOR_big_F", true],
-		["CamoNet_OPFOR_big_F", true],
-		["Land_IRMaskingCover_01_F", true]
-	]
-];
+

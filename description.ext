@@ -17,8 +17,25 @@ respawnOnStart = -1;
 disabledAI = 1;
 enableDebugConsole = 1;
 ReviveMode = 0;
-corpseManagerMode = 0;
-wreckManagerMode = 0;
+
+//Garbage Collection
+corpseManagerMode = 1; //all units
+corpseLimit = 50;
+corpseRemovalMinTime = 48;
+corpseRemovalMaxTime = 300;
+
+wreckManagerMode = 1; //all wreaks
+wreckLimit = 32;
+wreckRemovalMinTime = 60;
+wreckRemovalMaxTime = 360;
+
+disposalCheckPeriod = 15; //Seconds. allowed range 1 - 60
+minPlayerDistance[] = {240, 360, 50}; // meters. {Corpses, wrecks, weaponholders(items on ground)}
+
+weaponholderManagerMode = 1; //all items on the ground
+weaponholderLimit = 50; 
+weaponholderRemovalMinTime = 30;
+weaponholderRemovalMaxTime = 180;
 
 BIS_WL_sectorResetTimeout = 300;
 BIS_WL_sectorVotingDuration = 15;
