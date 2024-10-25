@@ -8728,7 +8728,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={23059.529,49.055279,7274.6079};
-			angle=3.9814036;
+			angle=3.9814034;
 			class Attributes
 			{
 				sizeA=150;

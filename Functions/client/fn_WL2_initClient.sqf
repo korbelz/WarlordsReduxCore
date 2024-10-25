@@ -59,6 +59,7 @@ BIS_fnc_WL2_wasMain = compileFinal preprocessFileLineNumbers "Functions\client\f
 BIS_fnc_WL2_zoneRestrictionHandleClient = compileFinal preprocessFileLineNumbers "Functions\client\fn_WL2_zoneRestrictionHandleClient.sqf";
 
 BIS_fnc_WL2_sub_arsenalSetup = compileFinal preprocessFileLineNumbers "Functions\subroutines\fn_WL2_sub_arsenalSetup.sqf";
+BIS_fnc_WL2_sub_assetLanding = compileFinal preprocessFileLineNumbers "Functions\subroutines\fn_WL2_sub_assetLanding.sqf";
 BIS_fnc_WL2_sub_dazzlerAction = compileFinal preprocessFileLineNumbers "Functions\subroutines\fn_WL2_sub_dazzlerAction.sqf";
 BIS_fnc_WL2_sub_purchaseMenuAssetAvailability = compileFinal preprocessFileLineNumbers "Functions\subroutines\fn_WL2_sub_purchaseMenuAssetAvailability.sqf";
 BIS_fnc_WL2_sub_purchaseMenuGetUIScale = compileFinal preprocessFileLineNumbers "Functions\subroutines\fn_WL2_sub_purchaseMenuGetUIScale.sqf";
@@ -71,7 +72,7 @@ BIS_fnc_WL2_sub_rearmAction = compileFinal preprocessFileLineNumbers "Functions\
 BIS_fnc_WL2_sub_rearmActionAir = compileFinal preprocessFileLineNumbers "Functions\subroutines\fn_WL2_sub_rearmActionAir.sqf";
 BIS_fnc_WL2_sub_removeAction = compileFinal preprocessFileLineNumbers "Functions\subroutines\fn_WL2_sub_removeAction.sqf";
 BIS_fnc_WL2_sub_vehicleLockAction = compileFinal preprocessFileLineNumbers "Functions\subroutines\fn_WL2_sub_vehicleLockAction.sqf";
-BIS_fnc_WL2_sub_assetLanding = compileFinal preprocessFileLineNumbers "Functions\subroutines\fn_WL2_sub_assetLanding.sqf";
+
 
 BIS_fnc_WL2_vehicleRearm = compileFinal preprocessFileLineNumbers "Functions\client\rearming\fn_WL2_vehicleRearm.sqf";
 BIS_fnc_animate = compileFinal preprocessFileLineNumbers "Functions\client\rearming\fn_animate.sqf";
