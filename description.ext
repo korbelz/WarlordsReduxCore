@@ -1,22 +1,23 @@
 #include "Functions\warlords_constants.inc"
-#include "ui\defines.hpp"
-#include "ui\controls.hpp"
+
 
 
 onLoadName = "Warlords Redux: Core";
 dev = "Arma 3 Community";
 author = "Arma 3 Community";
-allowFunctionsLog = 1;
-zeusCompositionScriptLevel = 2;
+//allowFunctionsLog = 1;
+//zeusCompositionScriptLevel = 2;
 //adminIDs[] = {"xxxxx", "xxxxx"};
 
 //Settings
 respawn = 3;
 respawnDelay = 60;
 respawnOnStart = -1;
+
 disabledAI = 1;
+
 enableDebugConsole = 1;
-ReviveMode = 0;
+
 
 //Garbage Collection
 corpseManagerMode = 1; //all units
@@ -64,10 +65,7 @@ class Header
 
 //#include "mp_securityCommands.hpp" These are disabled, see file for more details
 //#include "mp_securityFunctions.hpp" These are disabled, see file for more details
-#include "functions.hpp"
-#include "configs.hpp"
 #include "requisitions.hpp"
-#include "sounds.hpp"
 #include "briefings.hpp"
 
 /*

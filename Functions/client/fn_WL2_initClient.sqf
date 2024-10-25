@@ -56,7 +56,6 @@ BIS_fnc_WL2_targetSelected = compileFinal preprocessFileLineNumbers "Functions\c
 BIS_fnc_WL2_targetSelectionHandleClient = compileFinal preprocessFileLineNumbers "Functions\client\fn_WL2_targetSelectionHandleClient.sqf";
 BIS_fnc_WL2_teammatesAvailability = compileFinal preprocessFileLineNumbers "Functions\client\fn_WL2_teammatesAvailability.sqf";
 BIS_fnc_WL2_wasMain = compileFinal preprocessFileLineNumbers "Functions\client\fn_WL2_wasMain.sqf";
-BIS_fnc_WL2_welcome = compileFinal preprocessFileLineNumbers "Functions\client\fn_WL2_welcome.sqf";
 BIS_fnc_WL2_zoneRestrictionHandleClient = compileFinal preprocessFileLineNumbers "Functions\client\fn_WL2_zoneRestrictionHandleClient.sqf";
 
 BIS_fnc_WL2_sub_arsenalSetup = compileFinal preprocessFileLineNumbers "Functions\subroutines\fn_WL2_sub_arsenalSetup.sqf";
@@ -81,7 +80,6 @@ BIS_fnc_getExtras = compileFinal preprocessFileLineNumbers "Functions\client\rea
 BIS_fnc_getHulls = compileFinal preprocessFileLineNumbers "Functions\client\rearming\fn_getHulls.sqf";
 BIS_fnc_rearm = compileFinal preprocessFileLineNumbers "Functions\client\rearming\fn_rearm.sqf";
 
-MRTM_fnc_settingsinit = compileFinal preprocessFileLineNumbers "scripts\MRTM\fn_settingsinit.sqf";
 
 waitUntil {!isNull player && {isPlayer player}};
 
@@ -129,7 +127,7 @@ enableSentences true;
 {_x enableChannel [true, false]} forEach [0,2];
 enableEnvironment [false, true];
 
-call MRTM_fnc_settingsInit;
+
 uiNamespace setVariable ["BIS_WL_purchaseMenuLastSelection", [0,0,0]];
 uiNamespace setVariable ["activeControls", []];
 uiNamespace setVariable ["control", 10000];

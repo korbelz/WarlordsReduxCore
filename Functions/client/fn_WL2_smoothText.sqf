@@ -59,13 +59,11 @@ if (count BIS_onScreenMessagesVisible > 1) then {
 	} forEach (BIS_onScreenMessagesVisible select {_x != _messageID});
 };
 
-_announcerPositionRatio = if (profileNamespace getVariable ["MRTM_smallAnnouncerText", false]) then { 8 } else { 4 };
-_announcerSizeRatio = if (profileNamespace getVariable ["MRTM_smallAnnouncerText", false]) then {(30 call BIS_fnc_WL2_sub_purchaseMenuGetUIScale)} else {(23 call BIS_fnc_WL2_sub_purchaseMenuGetUIScale)};
 
-_box ctrlSetPosition [_xDef, _yDef + (_hDef / _announcerPositionRatio), _wDef, _hDef / _announcerSizeRatio];
+_box ctrlSetPosition [_xDef, _yDef + (_hDef / 4), _wDef, _hDef / 25];
 _box ctrlSetBackgroundColor [0, 0, 0, 0];
 _box ctrlSetTextColor _color;
-_box ctrlSetFontHeight (_hDef / _announcerSizeRatio);
+_box ctrlSetFontHeight (_hDef / 25);
 _box ctrlCommit 0;
 
 _textArr = toArray _text;

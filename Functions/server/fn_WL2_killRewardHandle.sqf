@@ -30,9 +30,7 @@ if (_killerSide != _unitSide) then {
 	} else {
 		_killReward = (serverNamespace getVariable "WL2_killRewards") get (typeOf _unit);
 	};
-	if (_responsibleLeader getVariable ["MRTM_3rdPersonDisabled", false]) then {
-		_killReward = _killReward * 2;
-	};
+	
 	if ((_targets findIf {_unit inArea (_x getVariable "objectAreaComplete")}) != -1) then {
 		_killReward = _killReward * 1.2;
 	};

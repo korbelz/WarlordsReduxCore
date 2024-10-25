@@ -46,9 +46,7 @@ BIS_fnc_orderDefence = compileFinal preprocessFileLineNumbers "Functions\server\
 BIS_fnc_orderGround = compileFinal preprocessFileLineNumbers "Functions\server\clientRequests\fn_orderGround.sqf";
 BIS_fnc_orderNaval = compileFinal preprocessFileLineNumbers "Functions\server\clientRequests\fn_orderNaval.sqf";
 
-MRTM_fnc_leaveGroup = compileFinal preprocessFileLineNumbers "scripts\MRTM\fn_leaveGroup.sqf";
-MRTM_fnc_accept = compileFinal preprocessFileLineNumbers "scripts\MRTM\fn_accept.sqf";
-MRTM_fnc_invite = compileFinal preprocessFileLineNumbers "scripts\MRTM\fn_invite.sqf";
+
 
 call BIS_fnc_WL2_tablesSetUp;
 call BIS_fnc_WL2_serverEHs;

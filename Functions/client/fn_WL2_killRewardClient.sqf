@@ -38,9 +38,7 @@ if (_unit isKindOf "Man") then {
 
 WAS_score = true;
 
-if (profileNamespace getVariable ["MRTM_playKillSound", true]) then {
-	playSoundUI ["AddItemOK", 0.1, 1];
-};
+
 
 _ctrl ctrlCommit 0;
 

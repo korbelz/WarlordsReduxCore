@@ -16,11 +16,7 @@ addMissionEventHandler ["HandleDisconnect", {
 		if !(isPlayer _x) then {deleteVehicle _x;};
 	} forEach ((allUnits) select {(_x getVariable ["BIS_WL_ownerAsset", "132"] == _uid)});
 
-	{
-		_player = _x call BIS_fnc_getUnitByUID;
-		[_player, _unit] spawn MRTM_fnc_accept;
-	} forEach (missionNamespace getVariable [(format ["MRTM_invitesOut_%1", _uid]), []]);
-	
+		
 	call BIS_fnc_WL2_calcImbalance;
 }];
 
